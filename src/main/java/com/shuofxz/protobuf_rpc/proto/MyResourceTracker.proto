@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+import "com/shuofxz/protobuf_rpc/proto/MyResourceTrackerMessage.proto";
+option java_package = "com.shuofxz.protobuf_rpc.proto";
+option java_outer_classname = "MyResourceTrackerProto";
+option java_generic_services = true;
+option java_generate_equals_and_hash = true;
+
+service MyResourceTrackerService {
+    rpc registerNodeManager(MyRegisterNodeManagerRequestProto) returns (MyRegisterNodeManagerResponseProto);
+}

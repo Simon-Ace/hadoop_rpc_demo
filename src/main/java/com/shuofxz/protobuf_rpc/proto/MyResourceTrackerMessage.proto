@@ -1,0 +1,15 @@
+syntax = "proto3";
+option java_package = "com.shuofxz.protobuf_rpc.proto";
+option java_outer_classname = "MyResourceTrackerMessageProto";
+option java_generic_services = true;
+option java_generate_equals_and_hash = true;
+
+message MyRegisterNodeManagerRequestProto {
+    string hostname = 1;
+    int32 cpu = 2;
+    int32 memory = 3;
+}
+
+message MyRegisterNodeManagerResponseProto {
+    string flag = 1;
+}
